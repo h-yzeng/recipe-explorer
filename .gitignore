@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .vscode
 *.vscode
+.claude/*
+.claude
+.vercel
+.env*.local
