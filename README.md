@@ -23,19 +23,19 @@ A modern web application for discovering and exploring delicious recipes from ar
 
 ### Frontend Framework
 
-- **[Vue 3](https://vuejs.org/)** - Progressive JavaScript framework
-- **[TypeScript](https://www.typescriptlang.org/)** - Typed superset of JavaScript
-- **[Vuetify 3](https://vuetifyjs.com/)** - Material Design component framework
+- **Vue 3** - Progressive JavaScript framework
+- **TypeScript** - Typed superset of JavaScript
+- **Vuetify 3** - Material Design component framework
 
 ### Build Tools
 
-- **[Vite](https://vitejs.dev/)** - Frontend Build Tool
-- **[Vue Router](https://router.vuejs.org/)** - Official router for Vue.js
+- **Vite** - Frontend Build Tool
+- **Vue Router** - Official router for Vue.js
 
 ### Styling
 
 - **SCSS** - CSS preprocessor for enhanced styling capabilities
-- **[Google Fonts](https://fonts.google.com/)** - Various fonts for modern typography
+- **Google Fonts** - Various fonts for modern typography
 - **Material Design Icons** - Icon library
 
 ### Development
@@ -107,7 +107,7 @@ Preview the production build locally before deployment.
 
 This project is configured for easy deployment on:
 
-- **[Vercel](https://vercel.com/)**
+- **Vercel**
 
 ### Deploy to Vercel
 
