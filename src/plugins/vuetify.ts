@@ -12,15 +12,21 @@ const vuetify = createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#FF6B35',
-          secondary: '#004E89',
-          accent: '#F77F00',
-          error: '#D62828',
-          info: '#06AED5',
-          success: '#06D6A0',
-          warning: '#F77F00',
+          primary: '#E53935',      
+          secondary: '#558B2F',   
+          accent: '#FFB300',       
+          error: '#C62828',        
+          info: '#FF6F00',         
+          success: '#7CB342',     
+          warning: '#FFA726',      
+          background: '#FFFEF7',   
         },
       },
+    },
+  },
+  defaults: {
+    VBtn: {
+      style: 'font-family: Poppins, sans-serif; letter-spacing: 0.02em;',
     },
   },
 })
