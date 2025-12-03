@@ -1,0 +1,167 @@
+// Recipe Card Styles
+.recipe-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #FFB300;
+    box-shadow: 0 4px 20px rgba(255, 179, 0, 0.3);
+  }
+}
+
+.recipe-image {
+  position: relative;
+}
+
+.difficulty-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.recipe-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #3E2723;
+  letter-spacing: -0.01em;
+}
+
+.recipe-subtitle {
+  color: #8D6E63;
+  font-size: 0.9rem;
+}
+
+.recipe-description {
+  flex-grow: 1;
+  color: #4E342E;
+  line-height: 1.6;
+}
+
+.v-card {
+  &:hover {
+    .v-card-title {
+      color: #E53935;
+    }
+  }
+}
+
+// Hero Section Styles
+.hero-section {
+  background: linear-gradient(135deg, #E53935 0%, #D32F2F 50%, #C62828 100%);
+  padding: 5rem 0;
+  color: white;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 179, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 179, 66, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: white !important;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Feature Card Styles
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid #F0F0F0;
+
+  &:hover {
+    background: linear-gradient(135deg, #FFF9E6 0%, #F1F8E9 100%);
+    border-color: #FFB300;
+    transform: translateY(-4px);
+  }
+
+  &:nth-child(3n+1) .feature-icon {
+    background: linear-gradient(135deg, #FFB300 0%, #FFA726 100%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+
+  &:nth-child(3n+2) .feature-icon {
+    background: linear-gradient(135deg, #7CB342 0%, #558B2F 100%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+
+  &:nth-child(3n+3) .feature-icon {
+    background: linear-gradient(135deg, #E53935 0%, #C62828 100%);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+
+  .v-icon {
+    color: white !important;
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
